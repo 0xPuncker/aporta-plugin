@@ -1,0 +1,5 @@
+# the global gitignore drops *.claude*; the plugin manifests must ship
+!.claude-plugin/
+!.claude-plugin/**
+!plugins/*/.claude-plugin/
+!plugins/*/.claude-plugin/**

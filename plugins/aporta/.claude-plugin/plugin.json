@@ -1,0 +1,14 @@
+{
+  "name": "aporta",
+  "description": "Comandos /aporta:* para o agente AportaAI (MCP com login Clerk)",
+  "version": "0.13.0",
+  "mcpServers": {
+    "aporta": {
+      "type": "http",
+      "url": "https://aporta-ai.bifrostlabs.xyz/eve/v1/mcp"
+    }
+  },
+  "author": {
+    "name": "0xPuncker"
+  }
+}

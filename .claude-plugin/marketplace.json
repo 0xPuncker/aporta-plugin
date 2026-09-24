@@ -1,0 +1,15 @@
+{
+  "name": "aporta",
+  "owner": {
+    "name": "0xPuncker"
+  },
+  "description": "Plugins do AportaAI para o Claude Code",
+  "plugins": [
+    {
+      "name": "aporta",
+      "source": "./plugins/aporta",
+      "description": "AportaAI: ações e FIIs brasileiros com dados abertos da CVM e da B3, e sua carteira, pelo MCP",
+      "version": "0.13.0"
+    }
+  ]
+}
