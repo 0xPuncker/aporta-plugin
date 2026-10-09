@@ -11,4 +11,6 @@ Mensagem:
 
 Consulta: $ARGUMENTS
 
-Se acima houver o nome de uma consulta, rode essa e mostre o resultado. Se não houver, liste as consultas disponíveis, uma linha cada, com o que cada uma responde — repetindo a descrição que a tool devolveu, sem escrever a sua.
+Aparece um nome de consulta acima? Então rode `run_query` com esse nome e mostre as linhas que voltarem. Não liste outras consultas e não descreva essa: o pedido é o resultado dela. Resultado vazio é resposta — diga que veio vazio e, se a tool devolver `note`, repasse o motivo.
+
+Não aparece nada acima? Então liste as consultas disponíveis, uma linha cada, repetindo a `description` que a tool devolveu em vez de escrever a sua.
