@@ -1,7 +1,7 @@
 ---
-name: consultas
-description: Lista as consultas que o AportaAI sabe responder, ou roda uma pelo nome
-argument-hint: "[nome de uma consulta, ex.: exposure]"
+name: meta
+description: "Quanto falta para uma renda mensal alvo e em quanto tempo, a partir da carteira atual"
+argument-hint: "[ex.: 1500 | 1500 com aporte de 500 e 1000]"
 allowed-tools: mcp__plugin_aporta_aporta__agent_start mcp__plugin_aporta_aporta__agent_get mcp__plugin_aporta_aporta__agent_update
 disable-model-invocation: true
 ---
@@ -9,6 +9,6 @@ Envie ao agente AportaAI, com a tool `agent_start` do servidor MCP `aporta`, a m
 
 Mensagem:
 
-Consulta: $ARGUMENTS
+Meta de renda: $ARGUMENTS
 
-Se acima houver o nome de uma consulta, rode essa e mostre o resultado. Se não houver, liste as consultas disponíveis, uma linha cada, com o que cada uma responde — repetindo a descrição que a tool devolveu, sem escrever a sua.
+Se acima não houver um valor, use a meta das minhas configurações e diga que usou a configurada. Se houver aportes mensais informados, compare cada um; se não houver, use o aporte configurado. Mostre quanto falta de patrimônio e o tempo para cada aporte.

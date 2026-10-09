@@ -1,7 +1,7 @@
 ---
-name: consultas
-description: Lista as consultas que o AportaAI sabe responder, ou roda uma pelo nome
-argument-hint: "[nome de uma consulta, ex.: exposure]"
+name: simular
+description: "Projeta capital e renda mês a mês para um aporte mensal fixo"
+argument-hint: "[ex.: 500 | 500 por 120 meses | 500 a 0,8% ao mês]"
 allowed-tools: mcp__plugin_aporta_aporta__agent_start mcp__plugin_aporta_aporta__agent_get mcp__plugin_aporta_aporta__agent_update
 disable-model-invocation: true
 ---
@@ -9,6 +9,6 @@ Envie ao agente AportaAI, com a tool `agent_start` do servidor MCP `aporta`, a m
 
 Mensagem:
 
-Consulta: $ARGUMENTS
+Simule um aporte mensal: $ARGUMENTS
 
-Se acima houver o nome de uma consulta, rode essa e mostre o resultado. Se não houver, liste as consultas disponíveis, uma linha cada, com o que cada uma responde — repetindo a descrição que a tool devolveu, sem escrever a sua.
+Se acima não houver valor de aporte, use o aporte das minhas configurações e diga que usou o configurado. Parta da minha carteira atual como capital inicial, salvo se eu informar outro. Mostre a projeção mês a mês e diga qual yield foi usado.

@@ -1,7 +1,7 @@
 ---
-name: consultas
-description: Lista as consultas que o AportaAI sabe responder, ou roda uma pelo nome
-argument-hint: "[nome de uma consulta, ex.: exposure]"
+name: extrato
+description: "Mostra as linhas cruas gravadas: carteira, proventos, aportes, holdings ou vendas"
+argument-hint: "[portfolio | distributions | contributions | holdings | sales]"
 allowed-tools: mcp__plugin_aporta_aporta__agent_start mcp__plugin_aporta_aporta__agent_get mcp__plugin_aporta_aporta__agent_update
 disable-model-invocation: true
 ---
@@ -9,6 +9,6 @@ Envie ao agente AportaAI, com a tool `agent_start` do servidor MCP `aporta`, a m
 
 Mensagem:
 
-Consulta: $ARGUMENTS
+Mostre o registro cru de: $ARGUMENTS
 
-Se acima houver o nome de uma consulta, rode essa e mostre o resultado. Se não houver, liste as consultas disponíveis, uma linha cada, com o que cada uma responde — repetindo a descrição que a tool devolveu, sem escrever a sua.
+Se acima não houver arquivo informado, mostre o `portfolio`. Isto é conferência do que ficou gravado, não análise: mostre as linhas como estão no arquivo, sem recalcular, sem preço de hoje e sem somar nada que não esteja lá.
