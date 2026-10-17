@@ -1,6 +1,6 @@
 ---
 name: config
-description: Mostra ou altera suas configurações: idioma, detalhe, tabelas, meta de renda, aporte mensal
+description: "Mostra ou altera suas configurações: idioma, detalhe, tabelas, meta de renda, aporte mensal"
 argument-hint: "[ex.: idioma en | detalhe detailed | meta 1500]"
 allowed-tools: mcp__plugin_aporta_aporta__agent_start mcp__plugin_aporta_aporta__agent_get mcp__plugin_aporta_aporta__agent_update
 disable-model-invocation: true

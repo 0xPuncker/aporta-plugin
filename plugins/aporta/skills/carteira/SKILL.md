@@ -1,6 +1,6 @@
 ---
 name: carteira
-description: Mostra a carteira gravada no AportaAI: posições, patrimônio e renda estimada
+description: "Mostra a carteira gravada no AportaAI: posições, patrimônio e renda estimada"
 allowed-tools: mcp__plugin_aporta_aporta__agent_start mcp__plugin_aporta_aporta__agent_get mcp__plugin_aporta_aporta__agent_update
 disable-model-invocation: true
 ---

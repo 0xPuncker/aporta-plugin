@@ -1,6 +1,6 @@
 ---
 name: ativo
-description: Análise de um ticker: dividend yield, qualidade do dividendo, preço sobre valor patrimonial
+description: "Análise de um ticker: dividend yield, qualidade do dividendo, preço sobre valor patrimonial"
 argument-hint: "<TICKER>"
 allowed-tools: mcp__plugin_aporta_aporta__agent_start mcp__plugin_aporta_aporta__agent_get mcp__plugin_aporta_aporta__agent_update
 disable-model-invocation: true
