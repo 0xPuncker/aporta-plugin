@@ -1,7 +1,11 @@
 {
   "name": "aporta",
   "description": "Comandos /aporta:* para o agente AportaAI (MCP com login Clerk)",
+<<<<<<< HEAD
   "version": "0.16.2",
+=======
+  "version": "0.16.3",
+>>>>>>> 840ca5c (chore(release): v0.16.3)
   "mcpServers": {
     "aporta": {
       "type": "http",
