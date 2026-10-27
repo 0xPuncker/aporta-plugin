@@ -9,7 +9,11 @@
       "name": "aporta",
       "source": "./plugins/aporta",
       "description": "AportaAI: ações e FIIs brasileiros com dados abertos da CVM e da B3, e sua carteira, pelo MCP",
+<<<<<<< HEAD
       "version": "0.16.4"
+=======
+      "version": "0.16.5"
+>>>>>>> a7b1f04 (chore(release): v0.16.5)
     }
   ]
 }
